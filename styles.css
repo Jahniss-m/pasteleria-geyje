@@ -202,3 +202,138 @@ h2 {
   border-radius: 8px;
 }
 
+.tartas-estrella {
+  padding: 4rem 2rem;
+  background-color: #fff1f5;
+  color: #222;
+  text-align: center;
+}
+
+.tartas-estrella h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  color: #d23e3e;
+  margin-bottom: 2rem;
+}
+
+.scroll-tartas {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-tartas::-webkit-scrollbar {
+  display: none;
+}
+
+.tarta {
+  min-width: 250px;
+  background-color: #fff1f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.tarta img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.tarta h3 {
+  padding: 1rem;
+  color: #d23e3e;
+  font-size: 1.2rem;
+}
+
+.tabla-precios {
+  margin-top: 3rem;
+}
+
+.tabla-precios h3 {
+  font-size: 1.6rem;
+  color: #d23e3e;
+  margin-bottom: 1rem;
+}
+
+.tabla-precios ul {
+  list-style: none;
+  padding: 0;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.tabla-precios li {
+  margin-bottom: 0.5rem;
+}
+
+.cta-pedidos {
+  margin-top: 3rem;
+}
+
+.cta-pedidos a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #d23e3e;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.cta-pedidos a:hover {
+  transform: scale(1.05);
+  background-color: #e64545;
+}
+
+.scroll-indicador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.80rem;
+  color: #b45f06;
+  margin-top: 1rem;
+  animation: parpadeo 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 0.7; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(6px); }
+}
+
+.presentacion-pasteleria {
+  background-color: #fff5ee;
+  color: #5a4033;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.presentacion-pasteleria h2 {
+  font-size: 2.5rem;
+  color: #b45f06;
+  margin-bottom: 1rem;
+}
+
+.presentacion-pasteleria p {
+  font-size: 1.1rem;
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.catalogo-mensaje-final {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #5a4033;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  opacity: 0.85;
+}
